@@ -13,7 +13,7 @@ window.fetch = (url, init, ...args) => {
 		) {
 			const newBody = JSON.parse(init.body);
 			newBody.variables.playerType = "thunderdome";
-      newBody.variables.platform = "android";
+     		        newBody.variables.platform = "android";
 			init.body = JSON.stringify(newBody);
 		}
 	}
